@@ -1,0 +1,26 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@RestController
+@RequestMapping("/my")
+public class teacher {
+
+    @GetMapping("/api1")
+    public String api1() {
+        return "I'm your first api 1";
+    }
+
+    @GetMapping("/api2")
+    public String api2() {
+        return "I'm your first api 2";
+    }
+
+    @GetMapping("/api3")
+    public String api3() {
+        return "I'm your first api 3";
+    }
+}
